@@ -10,14 +10,14 @@
     </a-layout-header>
     <a-layout-content style="padding: 0 50px">
       <a-breadcrumb style="margin: 16px 0">
-        <a-breadcrumb-item
-          ><div class="i-ph-anchor-simple-thin" />
-          Home</a-breadcrumb-item
-        >
+        <a-breadcrumb-item>Home</a-breadcrumb-item>
         <a-breadcrumb-item>List</a-breadcrumb-item>
         <a-breadcrumb-item>App</a-breadcrumb-item>
       </a-breadcrumb>
-      <div :style="{ background: '#fff', minHeight: '280px' }" class="pa-100px">div</div>
+      <div :style="{ background: '#fff', minHeight: '280px' }" class="pa-100px">
+        <div class="i-openmoji:home-button" />
+        <i-openmoji:home-button />
+      </div>
     </a-layout-content>
     <a-layout-footer style="text-align: center"> Ant Design ©2018 Created by Ant UED </a-layout-footer>
   </a-layout>

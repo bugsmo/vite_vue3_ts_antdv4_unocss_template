@@ -6,7 +6,9 @@ import Components from 'unplugin-vue-components/vite'
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 // unocss
 import Unocss from 'unocss/vite'
-import { presetAttributify, presetUno } from 'unocss'
+// Icons 自动按需引入图标库
+import Icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,11 +20,12 @@ export default defineConfig({
         AntDesignVueResolver({
           importStyle: false, // css in js
         }),
+        // Icons
+        IconsResolver(),
       ],
     }),
-    Unocss({
-      presets: [presetAttributify(), presetUno()],
-    }),
+    Unocss(),
+    Icons({ autoInstall: true }), // 自动安装
   ],
   resolve: {
     // 设置别名

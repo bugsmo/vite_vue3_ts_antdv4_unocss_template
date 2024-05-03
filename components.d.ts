@@ -16,6 +16,7 @@ declare module 'vue' {
     AMenu: typeof import('ant-design-vue/es')['Menu']
     AMenuItem: typeof import('ant-design-vue/es')['MenuItem']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    'IOpenmoji:homeButton': typeof import('~icons/openmoji/home-button')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
