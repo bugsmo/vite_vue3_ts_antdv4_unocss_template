@@ -17,6 +17,11 @@
       <div :style="{ background: '#fff', minHeight: '280px' }" class="pa-100px">
         <div class="i-openmoji:home-button" />
         <i-openmoji:home-button />
+        <div class="my-card">
+          <div class="card-item">Card 1</div>
+          <div class="card-item">Card 2</div>
+          <div class="card-item">Card 3</div>
+        </div>
       </div>
     </a-layout-content>
     <a-layout-footer style="text-align: center"> Ant Design ©2018 Created by Ant UED </a-layout-footer>
@@ -68,5 +73,21 @@ const selectedKeys = ref<string[]>(['2'])
 
 [data-theme='dark'] .site-layout-content {
   background: #141414;
+}
+
+.my-card {
+  display: flex;
+  justify-content: space-between;
+
+  .card-item {
+    max-width: 300px;
+    height: 300px;
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+    flex: 1;
+    line-height: 300px;
+  }
 }
 </style>
