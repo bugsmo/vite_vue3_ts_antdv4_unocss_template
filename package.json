@@ -1,7 +1,8 @@
 {
-  "name": "vue-ts-app",
+  "name": "vite_vue3_ts_antdv4_unocss_template",
+  "author": "bugsmo",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -58,3 +59,4 @@
     "vue-tsc": "^2.0.6"
   }
 }
+
