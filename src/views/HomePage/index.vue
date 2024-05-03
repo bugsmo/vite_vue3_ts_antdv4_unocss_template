@@ -21,6 +21,16 @@
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
+// 测试接口请求
+import $api from 'Plugins/axios'
+
+$api({
+  url: window.location.href,
+  method: 'get',
+}).then((res) => {
+  console.log(res)
+})
+
 const selectedKeys = ref<string[]>(['2'])
 </script>
 <style scoped>
