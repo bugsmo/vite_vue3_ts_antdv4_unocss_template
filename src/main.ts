@@ -1,6 +1,5 @@
 import { createApp } from 'vue'
 import 'vue-global-api'
-import './style.css'
 import App from './App.vue'
 import { setupRouter } from 'Plugins/router'
 
