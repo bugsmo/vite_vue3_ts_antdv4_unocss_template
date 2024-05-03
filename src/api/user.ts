@@ -8,7 +8,7 @@ interface LoginDto {
 }
 
 // 这里约定所有的接口方法名前加个“$”前缀，跟普通方法名区分开
-export async function $authLogin(data: LoginDto, options?: AxiosRequestConfig) {
+export async function $authLogin(data?: LoginDto, options?: AxiosRequestConfig) {
   return $api({
     url: '/user/login',
     method: 'POST',

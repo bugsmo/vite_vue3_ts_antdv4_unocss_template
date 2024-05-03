@@ -15,7 +15,8 @@
       "Views/*": ["src/views/*"],
       "Plugins/*": ["src/plugins/*"],
       "Routes/*": ["src/routes/*"],
-      "API/*": ["src/api/*"]
+      "API/*": ["src/api/*"],
+      "Store/*": ["src/store/*"]
     }, //路径映射,配合别名使用
 
     /* Bundler mode */

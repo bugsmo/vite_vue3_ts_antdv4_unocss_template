@@ -30,6 +30,7 @@ export default defineConfig({
       Plugins: path.resolve(__dirname, 'src/plugins'),
       Routes: path.resolve(__dirname, 'src/routes'),
       API: path.resolve(__dirname, 'src/api'),
+      Store: path.resolve(__dirname, 'src/store'),
     },
   },
   server: {

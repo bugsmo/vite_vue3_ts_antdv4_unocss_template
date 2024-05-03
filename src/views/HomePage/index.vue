@@ -23,6 +23,16 @@
 import { ref } from 'vue'
 // 测试接口请求
 import { $authLogin } from 'API/user' // 这里记得配置路径映射别名
+// 测试Store
+import useUserStore from 'Store/modules/user'
+
+const userStore = useUserStore()
+
+console.log(userStore.username)
+
+userStore.authLogin().then((res) => {
+  console.log(res)
+})
 
 $authLogin({
   username: 'test',
