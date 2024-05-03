@@ -29,6 +29,18 @@ export default defineConfig({
       Views: path.resolve(__dirname, 'src/views'),
       Plugins: path.resolve(__dirname, 'src/plugins'),
       Routes: path.resolve(__dirname, 'src/routes'),
+      API: path.resolve(__dirname, 'src/api'),
+    },
+  },
+  server: {
+    port: 3000, // 本地开发服务端口
+    proxy: {
+      '/API': {
+        target: 'http://127.0.0.3:62000', // 要代理的地址
+        changeOrigin: true,
+        followRedirects: true, // Cookie支持重定向
+        rewrite: (path) => path.replace(/^\/API/, ''),
+      },
     },
   },
 })

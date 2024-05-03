@@ -22,11 +22,11 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 // 测试接口请求
-import $api from 'Plugins/axios'
+import { $authLogin } from 'API/user' // 这里记得配置路径映射别名
 
-$api({
-  url: window.location.href,
-  method: 'get',
+$authLogin({
+  username: 'test',
+  password: 'test',
 }).then((res) => {
   console.log(res)
 })
