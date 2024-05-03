@@ -29,6 +29,7 @@
     "ant-design-vue": "4.x",
     "axios": "^1.6.8",
     "pinia": "^2.1.7",
+    "unocss": "^0.59.4",
     "vue": "^3.4.21",
     "vue-router": "^4.3.2"
   },

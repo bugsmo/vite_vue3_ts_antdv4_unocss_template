@@ -10,11 +10,14 @@
     </a-layout-header>
     <a-layout-content style="padding: 0 50px">
       <a-breadcrumb style="margin: 16px 0">
-        <a-breadcrumb-item>Home</a-breadcrumb-item>
+        <a-breadcrumb-item
+          ><div class="i-ph-anchor-simple-thin" />
+          Home</a-breadcrumb-item
+        >
         <a-breadcrumb-item>List</a-breadcrumb-item>
         <a-breadcrumb-item>App</a-breadcrumb-item>
       </a-breadcrumb>
-      <div :style="{ background: '#fff', padding: '24px', minHeight: '280px' }">Content</div>
+      <div :style="{ background: '#fff', minHeight: '280px' }" class="pa-100px">div</div>
     </a-layout-content>
     <a-layout-footer style="text-align: center"> Ant Design ©2018 Created by Ant UED </a-layout-footer>
   </a-layout>
@@ -23,16 +26,16 @@
 import { ref } from 'vue'
 // 测试接口请求
 import { $authLogin } from 'API/user' // 这里记得配置路径映射别名
-// 测试Store
-import useUserStore from 'Store/modules/user'
+// // 测试Store
+// import useUserStore from 'Store/modules/user'
 
-const userStore = useUserStore()
+// const userStore = useUserStore()
 
-console.log(userStore.username)
+// console.log(userStore.username)
 
-userStore.authLogin().then((res) => {
-  console.log(res)
-})
+// userStore.authLogin().then((res) => {
+//   console.log(res)
+// })
 
 $authLogin({
   username: 'test',

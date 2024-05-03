@@ -4,6 +4,9 @@ import * as path from 'path'
 // Ant Design Vue 4.x 自动按需引入组件
 import Components from 'unplugin-vue-components/vite'
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
+// unocss
+import Unocss from 'unocss/vite'
+import { presetAttributify, presetUno } from 'unocss'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -16,6 +19,9 @@ export default defineConfig({
           importStyle: false, // css in js
         }),
       ],
+    }),
+    Unocss({
+      presets: [presetAttributify(), presetUno()],
     }),
   ],
   resolve: {
