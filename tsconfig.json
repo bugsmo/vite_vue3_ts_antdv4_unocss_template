@@ -10,7 +10,11 @@
       "@/*": ["src"],
       "Assets/*": ["src/assets/*"],
       "Components/*": ["src/components/*"],
-      "Utils/*": ["src/utils/*"]
+      "Utils/*": ["src/utils/*"],
+      "Config/*": ["src/config/*"],
+      "Views/*": ["src/views/*"],
+      "Plugins/*": ["src/plugins/*"],
+      "Routes/*": ["src/routes/*"]
     }, //路径映射,配合别名使用
 
     /* Bundler mode */
