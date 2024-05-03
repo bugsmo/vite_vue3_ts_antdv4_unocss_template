@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from 'Components/HelloWorld.vue' // 使用Components别名
+import { generateArray } from 'Utils/tools' // 使用Utils别名
+console.log(generateArray(20))
 </script>
 
 <template>
