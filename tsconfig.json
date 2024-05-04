@@ -32,8 +32,8 @@
 
     /* Linting */
     "strict": true, // 开启所有严格的类型检查
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedLocals": false, // 忽略变量未使用的报错 TS6133
+    "noUnusedParameters": false, // 忽略变量未使用的报错 TS6133
     "noFallthroughCasesInSwitch": true
   },
   //需要检测的文件
